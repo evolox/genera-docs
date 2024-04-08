@@ -52,7 +52,6 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Genera',
       logo: {
         alt: 'Genera',
         src: 'img/logo.svg',
