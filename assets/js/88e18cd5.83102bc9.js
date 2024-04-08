@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgenera_docs=self.webpackChunkgenera_docs||[]).push([[811],{3881:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/genera-docs/blog/tags/docusaurus","allTagsPath":"/genera-docs/blog/tags","count":4,"unlisted":false}')}}]);
