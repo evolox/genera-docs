@@ -14,7 +14,8 @@ API can accept multiple products with multiple images. Each image can be availbl
 
 API endpoint: `POST https://api.genera.space/v1/{brandId}/catalog/sync`
 
-Request body example:
+Payload:
+
 ```json
 {
   "products": [
@@ -96,13 +97,15 @@ Response:
 You can subscribe for processing updates using webhooks.
 To setup new webhook for updates retrival, you can use the next API endpoint:
 
-API endpoint: `POST https://api.genera.space/v1/{brandId}/webhook`
+API endpoint: `POST https://api.genera.space/v1/webhook`
 
-Request body example:
+Payload:
+
 
 ```json
 {
     "type": "processing",
+    "brandId": "5dfdccf7-bc9b-48cc-bfa6-9aadle1a0588",
     "url": "https://example.com/webhook"
 }
 ```
@@ -113,7 +116,7 @@ Response example:
 
 ```json
 {
-    "id": "webhook_123"
+    "id": "34dfccf7-bc9b-48cc-bfa6-9aadle1k45hj"
 }
 ```
 
@@ -121,7 +124,7 @@ Response example:
 
 To get the list of all webhooks, you can use the next endpoint:
 
-API endpoint: `GET https://api.genera.space/v1/{brandId}/webhook`
+API endpoint: `GET https://api.genera.space/v1/webhook`
 
 Response:
 
@@ -129,7 +132,7 @@ Response:
 {
     "webhooks": [
         {
-            "id": "webhook_123",
+            "id": "34dfccf7-bc9b-48cc-bfa6-9aadle1k45hj",
             "type": "processing",
             "url": "https://example.com/webhook"
         }
@@ -141,7 +144,7 @@ Response:
 
 To remove a webhook, you can use the next endpoint:
 
-API endpoint: `DELETE https://api.genera.space/v1/{brandId}/webhook/{webhookId}`
+API endpoint: `DELETE https://api.genera.space/v1/webhook/{webhookId}`
 
 Response:
 
